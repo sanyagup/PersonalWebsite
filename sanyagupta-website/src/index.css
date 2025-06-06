@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #B9F3FC;
+  color: #93C6E7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Playfair Display';
+  color: #93C6E7;
+}
+
+.nav-links a, .contact-button {
+  margin-left: 20px;
+  color: #93C6E7;
+  text-decoration: none;
+}
+
+.contact-button {
+  background-color: #FEDEFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.hero {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+}
+
+.left-panel {
+  flex: 1;
+  background-color: #FEDEFF;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  /* filter: blur(2px); */
+  opacity: 0.8;
+}
+
+.intro {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.portfolio-title {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display';
+}
+
+.portfolio-outline {
+  font-size: 4rem;
+  font-family: 'Playfair Display';
+  color: #93C6E7;
+  opacity: 0.5;
+}
+
+.social-links p {
+  margin: 10px 0;
+}
+
+.scroll-indicator {
+  text-align: center;
+  background-color: #FEDEFF;
+  border-radius: 50%;
+  width: 120px;
+  margin: 30px auto;
+  padding: 10px;
+}
