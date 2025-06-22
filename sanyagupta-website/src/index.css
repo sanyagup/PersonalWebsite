@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #B9F3FC;
-  color: #93C6E7;
+  font-family: 'Playfair Display';
+  background-color: #FEDEFF;
+  color:#93C6E7;
 }
 
 .navbar {
@@ -14,28 +18,19 @@ body {
   padding: 20px;
 }
 
-.left-panel {
-  flex: 1;
-  background-color: #FEDEFF;
-  padding: 30px;
-  position: relative;
-  align-items: center;
-  font-family: 'Playfair Display';
-}
-
 .logo {
   font-family: 'Playfair Display';
   color: #93C6E7;
+  background-color: #FEDEFF;
 }
 
 .nav-links a, .contact-button {
   margin-left: 20px;
-  color: #93C6E7;
   text-decoration: none;
 }
 
 .contact-button {
-  background-color: #FEDEFF;
+  background-color: #93C6E7;
   border: none;
   padding: 10px 15px;
   border-radius: 20px;
@@ -52,18 +47,12 @@ body {
 
 .hero-img {
   width: 100%;
-  /* filter: blur(2px); */
   opacity: 0.8;
 }
 
 .intro {
   margin-top: 20px;
   font-size: 0.9rem;
-}
-
-.right-panel {
-  flex: 1;
-  padding: 20px;
 }
 
 .portfolio-outline {
@@ -82,7 +71,7 @@ body {
 .scroll-indicator {
   text-align: center;
   font-family: 'Playfair Display';
-  background-color: #FEDEFF;
+  background-color: #93C6E7;
   border-radius: 50%;
   width: 120px;
   margin: 30px auto;
@@ -96,13 +85,23 @@ body {
 
 .right-panel{
   width: 50%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: 'Playfair Display';
   font-size: 1rem;
+  flex: 1;
+  padding: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  background-color: #B9F3FC;
+  padding: 30px;
+  position: relative;
+  align-items: center;
+  font-family: 'Playfair Display';
 }
 
 .portfolio-title {
@@ -111,3 +110,13 @@ body {
   border-radius: 10px;
 }
 
+.secondPage {
+  padding-top: 100px;
+}
+
+.middle {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 5rem;
+  justify-content: space-between;
+}
