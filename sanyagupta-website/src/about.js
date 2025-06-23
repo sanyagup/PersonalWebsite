@@ -1,15 +1,20 @@
 import React from 'react';
 import 'w3-css/w3.css';
 import './about.css'
+import myPhoto2 from './IMG_6344.jpg'
 
 const indexsecond = () => {
     return(
         <>
-            <h1>𐙚 About me 𐙚</h1>
             <section className="about">
                 <div className="center">
-                    <div className="left-panel">
-                        <p>hi</p>
+                    <div className="left-panel2">
+                        <h1>𐙚 About me 𐙚</h1>
+                        
+                        
+                    </div>
+                    <div className='right-panel2'>
+                        <img src={myPhoto2} alt="Sanya Gupta" className = "hero-img2"></img>
                     </div>
                 </div>
             </section>

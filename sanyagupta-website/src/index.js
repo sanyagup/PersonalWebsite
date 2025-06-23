@@ -1,18 +1,19 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'w3-css/w3.css';
-import myPhoto from './IMG_0306.jpg'
+// import myPhoto from './IMG_0306.jpg'
 import portofolioTitle from './Screenshot_2025-06-10_105058-removebg-preview.png'
 import './index.css';
 import About from './about.js';
+import AutoSlideshow from './components/AutoSlideshow.js';
 
-const Home = () => {
+const App = () => {
   const handleClick = () => {
        window.scrollTo({
          top: document.documentElement.scrollHeight,
          behavior: 'smooth',
        });
      };
+  
 
   return (
     <>
@@ -31,7 +32,7 @@ const Home = () => {
         <section className="hero">
           <div className='center'>
             <div className='left-panel w3-animate-top'>
-              <img src={myPhoto} alt="Sanya Gupta" className="hero-img"></img>
+              <AutoSlideshow />
               <p>I love data science and cybersecurity. Blah blah blah</p>
             </div>
 
@@ -39,6 +40,7 @@ const Home = () => {
               <img src={portofolioTitle} alt="portfolioTitle" className="portfolio-title"></img>
               <div className='social-links'>
                 <p><strong>LinkedIn & Email: </strong>sanyagup07</p>
+                <p><strong>Github: </strong>sanyagup</p>
               </div>
               <button className="scroll-indicator w3-animate-top" onClick={handleClick}>Scroll down</button>
             </div>
@@ -58,4 +60,4 @@ const Home = () => {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Home />);
+root.render(<App />);

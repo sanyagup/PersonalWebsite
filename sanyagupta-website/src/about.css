@@ -15,7 +15,7 @@ body {
   gap: 20px;
 }
 
-.right-panel{
+.right-panel2 {
   width: 50%;
   padding: 20px;
   display: flex;
@@ -28,12 +28,19 @@ body {
 
 }
 
-.left-panel {
+.left-panel2 {
   flex: 1;
   padding: 30px;
   position: relative;
   align-items: center;
   font-family: 'Playfair Display';
   background-color: #FEDEFF;
+}
 
+.hero-img2 {
+  width: 550px;          /* Make sure width and height are equal */
+  height: 550px;
+  object-fit: cover;     /* Ensures the image fills the shape without distortion */
+  border-radius: 50%;    /* This makes it a circle */
+  overflow: hidden;      /* Ensures anything outside the circle is hidden */
 }
