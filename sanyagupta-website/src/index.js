@@ -33,7 +33,7 @@ const App = () => {
           <div className='center'>
             <div className='left-panel w3-animate-top'>
               <AutoSlideshow />
-              <p>I love data science and cybersecurity. Blah blah blah</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat mattis orci eget dignissim. Ut sed orci elit. Integer aliquet est quis condimentum ullamcorper. Morbi malesuada posuere odio, et viverra purus euismod at. Aenean aliquet, ligula eu condimentum convallis, massa augue sollicitudin est, ac venenatis orci augue ut libero. </p>
             </div>
 
             <div className="right-panel w3-animate-top">
