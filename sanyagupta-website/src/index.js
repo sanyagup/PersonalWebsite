@@ -53,7 +53,6 @@ const App = () => {
         <section id="about" className="secondPage">
           <About />
         </section>
-
         </div>
     </>
   );

@@ -1,9 +1,10 @@
-import React from 'react';
 import 'w3-css/w3.css';
 import './about.css'
 import myPhoto2 from './IMG_6344.jpg'
 import Accordions from './components/accordions';
-const indexsecond = () => {
+
+
+const aboutPage = () => {
     return(
         <>
             <section className="about">
@@ -24,4 +25,4 @@ const indexsecond = () => {
     );
 };
 
-export default indexsecond;
+export default aboutPage;
