@@ -24,7 +24,7 @@ body {
   justify-content: center;
   font-family: 'Playfair Display';
   font-size: 1rem;
-  background-color: #FEDEFF;
+  background-color: #fcf3d0;
 
 }
 
@@ -34,7 +34,7 @@ body {
   position: relative;
   align-items: center;
   font-family: 'Playfair Display';
-  background-color: #FEDEFF;
+  background-color: #fcf3d0;
 }
 
 .hero-img2 {
@@ -43,6 +43,7 @@ body {
   object-fit: cover;     /* Ensures the image fills the shape without distortion */
   border-radius: 50%;    /* This makes it a circle */
   overflow: hidden;      /* Ensures anything outside the circle is hidden */
+  object-position: 5% 5%;
 }
 
 .accordion_text {

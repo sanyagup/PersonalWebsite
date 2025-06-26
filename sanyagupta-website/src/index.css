@@ -7,8 +7,8 @@ html {
 body {
   margin: 0;
   font-family: 'Playfair Display';
-  background-color: #FEDEFF;
-  color:#93C6E7;
+  background-color: #fcf3d0;
+  color:#5f5449;
 }
 
 .navbar {
@@ -20,8 +20,8 @@ body {
 
 .logo {
   font-family: 'Playfair Display';
-  color: #93C6E7;
-  background-color: #FEDEFF;
+  color: #5f5449;
+  background-color: #caac90;
 }
 
 .nav-links a, .contact-button {
@@ -30,7 +30,7 @@ body {
 }
 
 .contact-button {
-  background-color: #93C6E7;
+  background-color: #caac90;
   border: none;
   padding: 10px 15px;
   border-radius: 20px;
@@ -54,10 +54,36 @@ body {
   font-size: 0.9rem;
 }
 
+.portfolio-title {
+  font-family: 'Playfair Display';
+  font-size: 5rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: visible;
+  white-space: normal;
+  max-width: none;
+  animation: none;
+}
+
+.portfolio-title::after {
+  content: '';
+  display: inline-block;
+  width: 0.08em;
+  height: 1.2em;
+  background: black;
+  margin-left: 0.1em;
+  position: static;
+  animation: blink-caret .75s step-end infinite;
+  vertical-align: -0.1em;
+}
+
 .portfolio-outline {
   font-size: 4rem;
   font-family: 'Playfair Display';
-  color: #93C6E7;
+  color: #5f5449;
   opacity: 0.5;
 }
 
@@ -71,19 +97,19 @@ body {
 .scroll-indicator {
   text-align: center;
   font-family: 'Playfair Display';
-  background-color: #93C6E7;
+  background-color: #5f5449;
   border-radius: 50%;
   width: 120px;
   margin: 30px auto;
   padding: 10px;
 }
 
-.center {
+/* .center {
   display: flex;
   gap: 20px;
-}
+} */
 
-.right-panel{
+.right-panel {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -93,21 +119,16 @@ body {
   font-size: 1rem;
   flex: 1;
   padding: 20px;
+  text-align: center;
 }
 
 .left-panel {
   flex: 1;
-  background-color: #B9F3FC;
+  background-color: #caac90;
   padding: 30px;
   position: relative;
   align-items: center;
   font-family: 'Playfair Display';
-}
-
-.portfolio-title {
-  width: 110%;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .secondPage {
@@ -119,4 +140,36 @@ body {
   text-align: center;
   font-size: 5rem;
   justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  max-width: 20ch;
+  animation: typing 10s steps(25, end) infinite;
+  animation-fill-mode: both;
+  position: relative;
 }
+
+.middle::after {
+  content: '';
+  width: 0.08em;
+  height: 1.2em; /* Adjust this value for blinker height */
+  background: #5f5449;
+  position: absolute;
+  right: 0;
+  top: 1.5em; /* Adjust for vertical alignment */
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  85% { width: 100% }
+  95% { width: 100% }
+  100% { width: 0  /* Adjust this value to control when the text stops typing */ }
+}
+
+@keyframes blink-caret {
+  0%, 100% { background: transparent; }
+  50% { background: #5f5449; }
+}
+

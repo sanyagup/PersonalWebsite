@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import img1 from './IMG_0306.jpg';
-import img2 from './IMG_6344.jpg'; // Replace with real paths
-import img3 from './IMG_0306.jpg';
+import img1 from './pictures_for_components/IMG_0306.jpg';
+import img2 from './pictures_for_components/IMG_6344.jpg'; // Replace with real paths
+import img3 from './pictures_for_components/IMG_0306.jpg';
 import 'w3-css/w3.css';
 
 const images = [img1, img2, img3];

@@ -1,6 +1,6 @@
 import 'w3-css/w3.css';
 import './about.css'
-import myPhoto2 from './IMG_6344.jpg'
+import myPhoto2 from './pictures/IMG_0306.jpg'
 import Accordions from './components/accordions';
 
 
