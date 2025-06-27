@@ -23,7 +23,7 @@ const App = () => {
             <a href="#about"><strong>About me</strong></a>
             <a href="#work_experience"><strong>Work Experience</strong></a>
             <a href="#projects"><strong>Projects</strong></a>
-            <button className="contact-button">Get in touch!</button>
+            <button className="contact-button" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'}>Get in touch!</button>
           </nav>
         </header>
 
@@ -37,8 +37,9 @@ const App = () => {
             <div className="right-panel w3-animate-top">
               <h1 className="portfolio-title">Hello! Welcome to Sanya's Portfolio🧸...</h1>
               <div className='social-links'>
-                <p><strong>LinkedIn & Email: </strong>sanyagup07</p>
-                <p><strong>Github: </strong>sanyagup</p>
+                <button className="contact-button2" onClick={() => window.location = 'https://www.linkedin.com/in/sanyagup07/'}><img src={require('./pictures/linkedin-icon.jpg')} alt="LinkedIn" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
+                <button className="contact-button2" onClick={() => window.location = 'https://github.com/sanyagup'}><img src={require('./pictures/github-icon.png')} alt="GitHub" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
+                <button className="contact-button2" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'}><img src={require('./pictures/gmail-icon.png')} alt="Email" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
               </div>
               <button className="scroll-indicator w3-animate-top" onClick={handleClick}>Scroll down</button>
             </div>

@@ -36,6 +36,28 @@ body {
   border-radius: 20px;
 }
 
+.contact-button2 {
+  background-color: #caac90;
+  border: none;
+  width: 60px;      /* set a fixed width */
+  height: 60px;     /* set a fixed height */
+  padding: 0;       /* remove extra padding */
+  border-radius: 50%; /* make button a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+.contact-button2 img {
+  width: 26px;
+  height: 36px;
+  margin: 7px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
 .hero {
   display: flex;
   justify-content: space-between; /* or center */
@@ -85,6 +107,14 @@ body {
   font-family: 'Playfair Display';
   color: #5f5449;
   opacity: 0.5;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* space between buttons */
 }
 
 .social-links p {
