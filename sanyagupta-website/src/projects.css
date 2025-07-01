@@ -1,0 +1,28 @@
+h1 {
+    font-family: Playfair Display;
+    padding: 20px;
+    margin-left: 15px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;           /* Allows wrapping to next line if not enough space */
+  gap: 2rem;                 /* Space between cards */
+  justify-content: center;   /* Center the cards horizontally */
+}
+
+.project-card {
+  flex: 0 1 220px;   /* Shrink the base width */
+  max-width: 250px;  /* Lower the max width */
+}
+
+.view-project-btn {
+  /* background-color: #caac90; Your desired color */
+  color: #5f5449;            /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  display: inline-block;
+}

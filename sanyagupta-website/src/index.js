@@ -3,6 +3,8 @@ import 'w3-css/w3.css';
 import './index.css';
 import About from './about.js';
 import WorkExperience from './workExperience.js';
+import Projects from './projects.js';
+import Slideshow from './components/Slideshow.js';
 
 const App = () => {
   const handleClick = () => {
@@ -30,7 +32,7 @@ const App = () => {
         <section className="hero">
           <div className='center'>
             <div className='left-panel w3-animate-top'>
-              <img src={require('./pictures/100_0225.jpg')} alt="Sanya Gupta" className="hero-img"></img>
+              <Slideshow />
               <p>Hi I am Sanya Gupta! I am an incoming undergraduate freshman at the University of Maryland, College Park! I am majoring in Computer and Information sciences with a concentration in data science and cybersecurity. To learn more about me check out my about me, resume, and work!</p>
             </div>
 
@@ -56,6 +58,10 @@ const App = () => {
 
         <section id="work_experience" className="thirdPage">
           <WorkExperience />
+        </section>
+
+        <section id="projects" className="fourthPage">
+          <Projects />
         </section>
         
         </div>
