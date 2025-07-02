@@ -20,21 +20,18 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
   font-family: 'Playfair Display';
   font-size: 1rem;
-  background-color: #fcf3d0;
-
 }
 
 .left-panel2 {
   flex: 1;
-  padding: 30px;
+  padding: 170px;
   position: relative;
   align-items: center;
   font-family: 'Playfair Display';
-  background-color: #fcf3d0;
 }
 
 .hero-img2 {
@@ -44,6 +41,27 @@ body {
   border-radius: 50%;    /* This makes it a circle */
   overflow: hidden;      /* Ensures anything outside the circle is hidden */
   object-position: 5% 5%;
+  margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+  .center {
+    flex-direction: column; /* Stack panels vertically */
+    align-items: center; /* Center align content */
+    gap: 20px; /* Add spacing between panels */
+  }
+
+  .left-panel2 {
+    width: 100%; /* Make the left panel full width */
+    padding: 30px; /* Maintain consistent padding */
+    text-align: center; /* Center text for better readability */
+  }
+
+  .hero-img2 {
+    width: 350px; /* Reduce size for smaller screens */
+    height: 350px;
+    margin-left: 0; /* Center the image */
+  }
 }
 
 .accordion_text {

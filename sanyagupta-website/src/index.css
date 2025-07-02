@@ -18,6 +18,15 @@ body {
   padding: 20px;
 }
 
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+}
+
 .logo {
   font-family: 'Playfair Display';
   color: #5f5449;
@@ -60,11 +69,10 @@ body {
 
 .hero {
   display: flex;
-  justify-content: space-between; /* or center */
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  gap: 2rem;
-  flex-wrap: wrap; /* for responsiveness */
+  padding: 40px;
+  background-color: #fcf3d0; /* Light background for better readability */
 }
 
 .hero-img {
@@ -134,10 +142,41 @@ body {
   padding: 10px;
 }
 
-/* .center {
+.center2 {
   display: flex;
-  gap: 20px;
-} */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .center2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio-title {
+    font-size: 1.5em;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .scroll-indicator {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
 
 .right-panel {
   width: 50%;

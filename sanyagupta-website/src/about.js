@@ -8,15 +8,14 @@ const aboutPage = () => {
     return(
         <>
             <section className="about">
-                <div className="center">
+            <h1>𐙚 About me 𐙚</h1>
+                <div className="center2">
                     <div className="left-panel2">
-                        <h1>𐙚 About me 𐙚</h1>
                         <Accordions />
-
-                        
+                       
                     </div>
                     <div className='right-panel2'>
-                        <img src={myPhoto2} alt="Sanya Gupta" className = "hero-img2"></img>
+                        <img src={myPhoto2} alt="Sanya Gupta" className = "hero-img2" ></img>
                     </div>
                 </div>
             </section>
