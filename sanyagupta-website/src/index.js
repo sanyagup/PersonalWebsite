@@ -33,7 +33,7 @@ const App = () => {
           <div className='center'>
             <div className='left-panel w3-animate-top'>
               <Slideshow />
-              <p>Hi I am Sanya Gupta! I am an incoming undergraduate freshman at the University of Maryland, College Park! I am majoring in Computer and Information sciences with a concentration in data science and cybersecurity. Some of my hobbies include dance and playing video games. To learn more about me check out my about me, resume, and work!</p>
+              <p>Hi I am Sanya Gupta! I am an incoming undergraduate freshman at the University of Maryland, College Park! I am majoring in Information science with a concentration in data science and cybersecurity. Some of my hobbies include dance and playing video games. To learn more about me check out my about me, resume, and work!</p>
             </div>
 
             <div className="right-panel w3-animate-top">

@@ -6,8 +6,8 @@ const WorkExperience = () => {
             <h1>𐙚 Work Experience and Leadership Positions 𐙚</h1>
             <div className="workExperience">
                 <div className="work-experience-item">
-                    <h3>Information Technology Intern I</h3>
-                    <p>Next Phase Solutions and Services - Summer 2023 & 2024 & 2025</p>
+                    <h3>Information Technology Summer Intern</h3>
+                    <p>Next Phase Solutions and Services - June 2023 to Present</p>
                     <ul>
                         <li>Helped on a company project that allows users to put in their API connectors and visually display IT problems, Windows/OS problems, Jira Tickets, AWS cloud issues, SNMP data, and many more.</li>
                         <li>Developed and fine-tuned Artificial Intelligence (AI) GPT2 models with an accuracy of 93%</li>
