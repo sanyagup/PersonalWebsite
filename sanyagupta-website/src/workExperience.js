@@ -6,8 +6,18 @@ const WorkExperience = () => {
             <h1>𐙚 Work Experience and Leadership Positions 𐙚</h1>
             <div className="workExperience">
                 <div className="work-experience-item">
+                    <h3>Technical Operation Team</h3>
+                    <p>App Development Club - July 2025 to Present</p>
+                    <ul>
+                        <li>Built secure Flask API endpoints for hierarchical team management, reducing manual setup time by 60% through automated parent–child group creation with Pydantic validation</li>
+                        <li>Designed and integrated RESTful APIs in Flask and React, improving data exchange speed by 25% through optimized HTTP request handling, structured JSON payloads, and reusable authentication headers</li>
+                        <li>Integrated front-end and back-end with token-based authentication, achieving 100% request success in load tests through structured API calls and robust error reporting</li>
+                        <li>Developed a Slack Web API integration to programmatically verify user existence and membership (workspace, user groups, and channels), automating access audits and onboarding/offboarding checks with retry/backoff handling and privacy-safe logging</li>
+                    </ul>
+                </div>
+                <div className="work-experience-item">
                     <h3>Information Technology Summer Intern</h3>
-                    <p>Next Phase Solutions and Services - June 2023 to Present</p>
+                    <p>Next Phase Solutions and Services - June 2023 to August 2025</p>
                     <ul>
                         <li>Helped on a company project that allows users to put in their API connectors and visually display IT problems, Windows/OS problems, Jira Tickets, AWS cloud issues, SNMP data, and many more.</li>
                         <li>Developed and fine-tuned Artificial Intelligence (AI) GPT2 models with an accuracy of 93%</li>
@@ -17,7 +27,7 @@ const WorkExperience = () => {
                 </div>
                 <div className="work-experience-item">
                     <h3>Technica Fellowship 2025</h3>
-                    <p>Technica - Summer 2025</p>
+                    <p>Technica - June 2025 to August 2025</p>
                     <ul>
                         <li>Developing projects using Web development concepts and React.js</li>
                         <li>Learned how to use bash commands in a collaborative GitHub project</li>

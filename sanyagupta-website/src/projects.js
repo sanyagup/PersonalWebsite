@@ -5,6 +5,12 @@ import './projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Mental Health Dashboard - Technica',
+      description: 'A mental health dashboard for hackers! This offfers easily accessible mental health support through features like stretch break guides, journaling prompts, guided breathing, and mood tracking.',
+      link: 'https://github.com/sanyagup/mental-health-dashboard-technica',
+      image: require('./pictures/Screenshot 2025-08-10 at 7.01.07 PM.png') // <-- Add your image here
+    },
+    {
       title: 'Game Hub',
       description: 'A website that hosts multiple games such as tic tac toe, rock paper scissors, and more! Built with React.js.',
       link: 'https://github.com/sanyagup/GameHub',

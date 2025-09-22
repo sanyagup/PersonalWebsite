@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import img2 from './pictures_for_components/IMG_0306.jpg';
 import img1 from './pictures_for_components/100_0225.jpg';
 import img3 from './pictures_for_components/IMG_6344.jpg';
-import img4 from './pictures_for_components/100_0205.jpg';
-import img5 from './pictures_for_components/IMG_0309.jpg';
-import img6 from './pictures_for_components/IMG_6722.jpg';
+
 import 'w3-css/w3.css';
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [img1, img2, img3];
 
 const AutoSlideshow = () => {
   const [slideIndex, setSlideIndex] = useState(0);
