@@ -6,10 +6,38 @@ const WorkExperience = () => {
             <h1>𐙚 Work Experience and Leadership Positions 𐙚</h1>
             <div className="workExperience">
                 <div className="work-experience-item">
-                    <h3>Technical Operation Team</h3>
-                    <p>App Development Club - July 2025 to Present</p>
+                    <h3>Backend Engineer - MITRE Project</h3>
+                    <p>App Development Club - Feb 2025 to Present</p>
                     <ul>
-                        <li>Built secure Flask API endpoints for hierarchical team management, reducing manual setup time by 60% through automated parent–child group creation with Pydantic validation</li>
+                        <li>Developing a centralized hub or search that uses NIST publications such as CSF 2.0, privacy framework to help users identify, export cybersecurity guidance</li>
+                    </ul>
+                </div>
+                <div className="work-experience-item">
+                    <h3>Software Engineer - General Assistant</h3>
+                    <p>Robert H. Smith School of Business - Feb 2025 to Present</p>
+                    <ul>
+                        <li><a href="https://github.com/business-school-app-dev" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                        <li>Collaborate directly with Associate Dean Joseph Bailey to maintain and enhance UMDollar, a financial wellness platform serving UMD students</li>
+                        <li>Support product improvements, financial education initiatives, and user engagement strategies</li>
+                        <li>Bridge technology, finance, and student impact through data-driven enhancements</li>
+                    </ul>
+                </div>
+                <div className="work-experience-item">
+                    <h3>Software Engineer - UMD Business School Project</h3>
+                    <p>App Development Club - Sep 2025 to Dec 2025</p>
+                    <ul>
+                        <li><a href="https://github.com/business-school-app-dev" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+                        <li>Building UMDollar to promote financial wellness through simulations</li>
+                        <li>Worked with other software engineers to design and implement UI components for a financial wellness mobile app</li>
+                        <li>Built and integrated a Flask backend with a TypeScript frontend for a financial wellness web app by implementing the UMD Courses API and dynamic course-matching logic, improving users' ability to discover relevant courses based on their input and academic interests</li>
+                        <li>Presenting app during 2026 Maryland Day</li>
+                    </ul>
+                </div>
+                <div className="work-experience-item">
+                    <h3>Technical Operation Team</h3>
+                    <p>App Development Club - July 2025 to Aug 2025</p>
+                    <ul>
+                        <li>Built secure Flask API endpoints for hierarchical team management, reducing manual setup time by 60% through automated parent-child group creation with Pydantic validation</li>
                         <li>Designed and integrated RESTful APIs in Flask and React, improving data exchange speed by 25% through optimized HTTP request handling, structured JSON payloads, and reusable authentication headers</li>
                         <li>Integrated front-end and back-end with token-based authentication, achieving 100% request success in load tests through structured API calls and robust error reporting</li>
                         <li>Developed a Slack Web API integration to programmatically verify user existence and membership (workspace, user groups, and channels), automating access audits and onboarding/offboarding checks with retry/backoff handling and privacy-safe logging</li>
@@ -32,32 +60,6 @@ const WorkExperience = () => {
                         <li>Developing projects using Web development concepts and React.js</li>
                         <li>Learned how to use bash commands in a collaborative GitHub project</li>
                         <li>Participated in workshops on career and college readiness, including topics such as interview preparation and professional networking</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Computer Science President/Board</h3>
-                    <p>National Technical Honor Society @ Marriotts Ridge High School- May 2024 - May 2025</p>
-                    <ul>
-                        <li>Led technical and computer science school-wide events with 30+ people, at Marriotts Ridge High School, such as: CTE week and computer science trivia</li>
-                        <li>Planned 5-6 technical and member-exclusive events such as tech trivia sessions, team bonding events, and coding competitions</li>
-                        <li>Tutored 5 students in AP Computer Science Principles and AP Computer Science A</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Lead CTO and CEO for Capstone 2024 and 2025</h3>
-                    <p>Applications and Research Laboratory - May 2024 - June 2024 & Dec 2024 - Jan 2025</p>
-                    <ul>
-                        <li>Led 8 teams to configure routers, switches, and troubleshoot systems</li>
-                        <li>Delegated roles, coordinated strategy, and maintained system services under timed competition environments</li>
-                        <li>COnfigured Windows, Linux, and Server OS; built small secure office networks</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Team Captain and Competitor @ Applications and Research Laboratory</h3>
-                    <p>AFA CyberPatriot - Oct 2024 - Dec 2024</p>
-                    <ul>
-                        <li>Led team to win state titles in Gold (2023) and Platinum (2024) tiers</li>
-                        <li>Secured OS vulnerabilities and maintained critical services under timed events. Operating systems include Linux and Windows</li>
                     </ul>
                 </div>
             </div>
