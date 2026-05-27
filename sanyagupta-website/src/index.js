@@ -8,50 +8,46 @@ import Slideshow from './components/Slideshow.js';
 
 const App = () => {
   const handleClick = () => {
-       window.scrollTo({
-         top: document.documentElement.scrollHeight,
-         behavior: 'smooth',
-       });
-     };
-  
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
-    
       <div className="home">
         <header className="navbar">
           <h1 className="logo">𐙚 Sanya Gupta 𐙚</h1>
           <nav className="nav-links">
-            <a href="#about"><strong>About me</strong></a>
-            <a href="#work_experience"><strong>Work Experience</strong></a>
+            <a href="#about"><strong>About</strong></a>
+            <a href="#work_experience"><strong>Experience</strong></a>
             <a href="#projects"><strong>Projects</strong></a>
-            <button className="contact-button" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'}>Get in touch!</button>
+            <button className="contact-button" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'}>Get in touch</button>
           </nav>
         </header>
 
         <section className="hero">
-          <div className='center'>
-            <div className='left-panel w3-animate-top'>
+          <div className="center">
+            <div className="left-panel">
               <Slideshow />
-              <p>Hi I am Sanya Gupta! I am an incoming undergraduate freshman at the University of Maryland, College Park! I am majoring in Information Systems. Some of my hobbies include dance and playing video games. To learn more about me check out my about me, resume, and work!</p>
             </div>
 
-            <div className="right-panel w3-animate-top">
-              <h1 className="portfolio-title">Hello! Welcome to Sanya's Portfolio🧸...</h1>
-              <div className='social-links'>
-                <button className="contact-button2" onClick={() => window.location = 'https://www.linkedin.com/in/sanyagup07/'}><img src={require('./pictures/linkedin-icon.jpg')} alt="LinkedIn" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
-                <button className="contact-button2" onClick={() => window.location = 'https://github.com/sanyagup'}><img src={require('./pictures/github-icon.png')} alt="GitHub" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
-                <button className="contact-button2" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'}><img src={require('./pictures/gmail-icon.png')} alt="Email" style={{ width: '2em', marginRight: '0.5em', verticalAlign: 'middle' }} /></button>
+            <div className="right-panel">
+              <span className="eyebrow">Portfolio · 2026</span>
+              <h1 className="portfolio-title">Hi, I'm Sanya.</h1>
+              <p className="tagline">
+                Information Systems student at the University of Maryland, College Park. I build software, study management and systems, and like making things that are both useful and well-crafted.
+              </p>
+              <div className="social-links">
+                <button className="contact-button2" onClick={() => window.location = 'https://www.linkedin.com/in/sanyagup07/'} aria-label="LinkedIn"><img src={require('./pictures/linkedin-icon.jpg')} alt="LinkedIn" /></button>
+                <button className="contact-button2" onClick={() => window.location = 'https://github.com/sanyagup'} aria-label="GitHub"><img src={require('./pictures/github-icon.png')} alt="GitHub" /></button>
+                <button className="contact-button2" onClick={() => window.location = 'mailto:sanyagup07@gmail.com'} aria-label="Email"><img src={require('./pictures/gmail-icon.png')} alt="Email" /></button>
               </div>
-              <button className="scroll-indicator w3-animate-top" onClick={handleClick}>Scroll down</button>
+              <button className="scroll-indicator" onClick={handleClick}>Explore</button>
             </div>
           </div>
-          
         </section>
-        
-        
-        <h2 className="middle">✩°｡🧸𓏲⋆.🧺𖦹 ₊˚....</h2>
-        
+
+        <h2 className="middle">✦ ✦ ✦</h2>
+
         <section id="about" className="secondPage">
           <About />
         </section>
@@ -63,8 +59,7 @@ const App = () => {
         <section id="projects" className="fourthPage">
           <Projects />
         </section>
-        
-        </div>
+      </div>
     </>
   );
 }

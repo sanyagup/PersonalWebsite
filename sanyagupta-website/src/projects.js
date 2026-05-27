@@ -1,90 +1,99 @@
 import React from 'react';
-import 'w3-css/w3.css';
 import './projects.css';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Mental Health Dashboard - Technica',
-      description: 'A mental health dashboard for hackers! This offfers easily accessible mental health support through features like stretch break guides, journaling prompts, guided breathing, and mood tracking.',
+      title: 'Mental Health Dashboard',
+      tag: 'Technica · React',
+      description:
+        'A mental health dashboard for hackers — accessible support via stretch breaks, journaling prompts, guided breathing, and mood tracking.',
       link: 'https://github.com/sanyagup/mental-health-dashboard-technica',
-      image: require('./pictures/Screenshot 2025-08-10 at 7.01.07 PM.png') // <-- Add your image here
+      image: require('./pictures/Screenshot 2025-08-10 at 7.01.07 PM.png'),
     },
     {
       title: 'Game Hub',
-      description: 'A website that hosts multiple games such as tic tac toe, rock paper scissors, and more! Built with React.js.',
+      tag: 'React.js',
+      description:
+        'A web app that hosts multiple games — tic-tac-toe, rock-paper-scissors, and more.',
       link: 'https://github.com/sanyagup/GameHub',
-      image: require('./pictures/Screenshot 2025-07-01 134755.png') // <-- Add your image here
+      image: require('./pictures/Screenshot 2025-07-01 134755.png'),
     },
     {
       title: 'Personal Portfolio',
-      description: 'This personal website that you are currently viewing! Built with React.js.',
+      tag: 'React.js',
+      description: 'The personal website you are currently viewing. Built with React.js.',
       link: 'https://github.com/sanyagup/PersonalWebsite',
-      image: require('./pictures/Screenshot 2025-07-01 135817.png')
+      image: require('./pictures/personalwebsite.png'),
     },
     {
-      title: 'Rock, Paper, Scissors GUI',
-      description: 'A simple Rock, Paper, Scissors game with a graphical user interface built in Python.',
+      title: 'Rock Paper Scissors GUI',
+      tag: 'Python',
+      description: 'A simple Rock-Paper-Scissors game with a graphical interface built in Python.',
       link: 'https://github.com/sanyagup/RockPaperScissors',
-      image: require('./pictures/Screenshot 2025-07-01 140119.png')
+      image: require('./pictures/Screenshot 2025-07-01 140119.png'),
     },
-    {   
-      title: 'GPT2 Chatbot',
-      description: 'A collection of various machine learning projects that I have worked on, showcasing different algorithms and techniques.',
+    {
+      title: 'GPT-2 Chatbot',
+      tag: 'Machine Learning',
+      description:
+        'A fine-tuned GPT-2 chatbot exploring different ML algorithms and techniques.',
       link: 'https://github.com/sanyagup/GPT2-Chatbot',
-    //   image: require('./pictures/gpt2.png')
     },
     {
       title: 'Image Classification',
-      description: 'A collection of various machine learning projects that I have worked on, showcasing different algorithms and techniques.',
+      tag: 'Machine Learning',
+      description:
+        'Image classification project showcasing different ML algorithms and techniques.',
       link: 'https://github.com/sanyagup/ImageClassification/blob/main/main.py',
-    //   image: require('./pictures/imageclassification.png')
     },
     {
       title: 'Python SQLite Project',
-      description: 'A project that demonstrates the use of SQLite with Python for database management.',
-      link: 'https://github.com/sanyagup/Python-SQLite-files'
-    //   image: require('./pictures/sqlite.png')
-    }
+      tag: 'Python · SQLite',
+      description:
+        'A project demonstrating the use of SQLite with Python for database management.',
+      link: 'https://github.com/sanyagup/Python-SQLite-files',
+    },
   ];
 
   return (
     <div className="projects-container">
-      <h1 className="projects-title">𐙚 Projects 𐙚</h1>
-      <div className="projects-list">
+      <span className="section-eyebrow">Work</span>
+      <h2 className="section-title">Selected projects</h2>
+
+      <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card w3-card-4 w3-margin">
-            <div className="w3-container w3-center">
-              {project.image && (
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <div className="project-image-wrap">
+              {project.image ? (
                 <img
                   src={project.image}
                   alt={project.title}
                   className="project-image"
-                  style={{
-                    width: '100%',
-                    maxHeight: '200px',
-                    objectFit: 'cover',
-                    borderRadius: '8px',
-                    marginBottom: '1em'
-                  }}
                 />
+              ) : (
+                <div className="project-image-placeholder" aria-hidden="true">
+                  <span>{project.title.charAt(0)}</span>
+                </div>
               )}
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-                <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="view-project-btn"
-                >
-                    View Project
-                </a>
             </div>
-          </div>
+            <div className="project-body">
+              <span className="project-tag">{project.tag}</span>
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <span className="project-link">View project ↗</span>
+            </div>
+          </a>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default Projects;

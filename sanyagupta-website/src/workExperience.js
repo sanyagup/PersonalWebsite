@@ -1,70 +1,119 @@
 import React from "react";
 import './workExperience.css';
+
+const experiences = [
+  {
+    role: 'Software Engineer Intern · AI',
+    org: 'inMorphis',
+    date: 'May 2026 - Present',
+    bullets: [
+      'Building AI-focused software as a summer engineering intern on the AI team.',
+    ],
+  },
+  {
+    role: 'Inclusive Communities Organizer',
+    org: 'Technica',
+    date: 'March 2026 - Present',
+    bullets: [
+      'Organize a technology-focused summer program for 20+ incoming college students of underrepresented genders in STEM, delivering hands-on web development and backend training using Typescript, React, and Git, which equipped participants with practical professional skills.',
+      'Spearhead the project track of the summer program by creating 5+ full-stack projects using Typescript, React, and Git, enabling organizing teams to provide students with real-world development experience.'
+    ],
+  },
+  {
+    role: 'Backend Engineer · MITRE Project',
+    org: 'App Development Club',
+    date: 'Feb 2026 — May 2026',
+    link: 'https://git.appdevclub.com/MITRESPRING2026/mitre-spring-26',
+    bullets: [
+      'Updated the search bar function to connect to all policies route and vectorize route to find similar policies as requested by the user, reducing the time to retrieve these policies by 50%.',
+      'Implemented a filter route for filtering over 50+ MITRE policies and added 5-6 categories and connected it to the frontend, allowing MITRE employees to find policies more efficiently.',
+      'Presented website to 10+ MITRE employees, securing critical user feedback to future improve policy retrieval.',
+    ],
+  },
+  {
+    role: 'Software Engineer · General Assistant',
+    org: 'Robert H. Smith School of Business',
+    date: 'Sep 2025 — May 2026',
+    link: 'https://github.com/business-school-app-dev',
+    bullets: [
+      'Collaborated with Business Associate Dean Joseph Bailey to define and prioritize feature requirements for UMDollar, increasing student financial engagement by 50% at the University of Maryland, College Park.',
+      'Advocated for platform expansion by presenting product demos and strategic roadmaps to 5+ executive stakeholders including the UMD President, SECU sponsors, and the Deans of the Smith School and UMD Libraries to align technical development with university-wide wellness goals.',
+      'Managed the complete product launch process for the Apple App Store using TestFlight, ensuring the app met ASO standards and Apple\'s Human Interface Guidelines for a problem-free release.',
+      'Migrated the database from PostgreSQL to SQLite, enabling a lightweight, resource-efficient local data environment.',
+      'Designed a route with dynamic course-matching logic via the UMD Courses API, cutting the time to find relevant courses by 50%.',
+    ],
+  },
+  {
+    role: 'Technical Operation Team',
+    org: 'App Development Club',
+    date: 'Jul 2025 — Aug 2025',
+    bullets: [
+      'Built secure Flask API endpoints for hierarchical team management, reducing manual setup time by 60% via automated parent-child group creation with Pydantic validation.',
+      'Designed RESTful APIs in Flask + React, improving data exchange speed by 25% through optimized HTTP handling and reusable authentication headers.',
+      'Integrated front-end and back-end with token-based authentication, achieving 100% request success in load tests.',
+      'Developed a Slack Web API integration to programmatically verify user membership across workspaces, groups, and channels automating access audits with retry/backoff and privacy-safe logging.',
+    ],
+  },
+  {
+    role: 'IT Summer Intern',
+    org: 'Next Phase Solutions and Services',
+    date: 'Jun 2023 — Aug 2025',
+    bullets: [
+      'Contributed to a company project that lets users plug in API connectors and visually surface IT/OS issues, Jira tickets, AWS cloud problems, SNMP data, and more.',
+      'Developed and fine-tuned GPT-2 models with 93% accuracy.',
+      'Delivered a fine-tuned chatbot model to 5–6 software engineers.',
+      'Managed structured data in SQL and Excel alongside engineering teams.',
+    ],
+  },
+  {
+    role: 'Technica Fellowship 2025',
+    org: 'Technica',
+    date: 'Jun 2025 — Aug 2025',
+    bullets: [
+      'Built projects using web development concepts and React.js.',
+      'Practiced bash and collaborative GitHub workflows.',
+      'Participated in workshops on career and college readiness, including interview prep and professional networking.',
+    ],
+  },
+];
+
 const WorkExperience = () => {
-  return(
-        <>
-            <h1>𐙚 Work Experience and Leadership Positions 𐙚</h1>
-            <div className="workExperience">
-                <div className="work-experience-item">
-                    <h3>Backend Engineer - MITRE Project</h3>
-                    <p>App Development Club - Feb 2025 to Present</p>
-                    <ul>
-                        <li>Developing a centralized hub or search that uses NIST publications such as CSF 2.0, privacy framework to help users identify, export cybersecurity guidance</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Software Engineer - General Assistant</h3>
-                    <p>Robert H. Smith School of Business - Feb 2025 to Present</p>
-                    <ul>
-                        <li><a href="https://github.com/business-school-app-dev" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-                        <li>Collaborate directly with Associate Dean Joseph Bailey to maintain and enhance UMDollar, a financial wellness platform serving UMD students</li>
-                        <li>Support product improvements, financial education initiatives, and user engagement strategies</li>
-                        <li>Bridge technology, finance, and student impact through data-driven enhancements</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Software Engineer - UMD Business School Project</h3>
-                    <p>App Development Club - Sep 2025 to Dec 2025</p>
-                    <ul>
-                        <li><a href="https://github.com/business-school-app-dev" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
-                        <li>Building UMDollar to promote financial wellness through simulations</li>
-                        <li>Worked with other software engineers to design and implement UI components for a financial wellness mobile app</li>
-                        <li>Built and integrated a Flask backend with a TypeScript frontend for a financial wellness web app by implementing the UMD Courses API and dynamic course-matching logic, improving users' ability to discover relevant courses based on their input and academic interests</li>
-                        <li>Presenting app during 2026 Maryland Day</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Technical Operation Team</h3>
-                    <p>App Development Club - July 2025 to Aug 2025</p>
-                    <ul>
-                        <li>Built secure Flask API endpoints for hierarchical team management, reducing manual setup time by 60% through automated parent-child group creation with Pydantic validation</li>
-                        <li>Designed and integrated RESTful APIs in Flask and React, improving data exchange speed by 25% through optimized HTTP request handling, structured JSON payloads, and reusable authentication headers</li>
-                        <li>Integrated front-end and back-end with token-based authentication, achieving 100% request success in load tests through structured API calls and robust error reporting</li>
-                        <li>Developed a Slack Web API integration to programmatically verify user existence and membership (workspace, user groups, and channels), automating access audits and onboarding/offboarding checks with retry/backoff handling and privacy-safe logging</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Information Technology Summer Intern</h3>
-                    <p>Next Phase Solutions and Services - June 2023 to August 2025</p>
-                    <ul>
-                        <li>Helped on a company project that allows users to put in their API connectors and visually display IT problems, Windows/OS problems, Jira Tickets, AWS cloud issues, SNMP data, and many more.</li>
-                        <li>Developed and fine-tuned Artificial Intelligence (AI) GPT2 models with an accuracy of 93%</li>
-                        <li>Delivered 1 fine-tuned model with chatbot functions to 5-6 software engineers</li>
-                        <li>Managed structured data in SQL and Excel with engineering teams</li>
-                    </ul>
-                </div>
-                <div className="work-experience-item">
-                    <h3>Technica Fellowship 2025</h3>
-                    <p>Technica - June 2025 to August 2025</p>
-                    <ul>
-                        <li>Developing projects using Web development concepts and React.js</li>
-                        <li>Learned how to use bash commands in a collaborative GitHub project</li>
-                        <li>Participated in workshops on career and college readiness, including topics such as interview preparation and professional networking</li>
-                    </ul>
-                </div>
-            </div>
-        </>
-    );
-}
+  return (
+    <div className="work-section">
+      <span className="section-eyebrow">Experience</span>
+      <h2 className="section-title">Work & leadership</h2>
+
+      <ol className="timeline">
+        {experiences.map((exp, i) => (
+          <li key={i} className="timeline-item">
+            <div className="timeline-marker" aria-hidden="true" />
+            <article className="timeline-card">
+              <header className="timeline-header">
+                <h3 className="timeline-role">{exp.role}</h3>
+                <span className="timeline-date">{exp.date}</span>
+              </header>
+              <p className="timeline-org">{exp.org}</p>
+              <ul className="timeline-bullets">
+                {exp.bullets.map((b, j) => (
+                  <li key={j}>{b}</li>
+                ))}
+              </ul>
+              {exp.link && (
+                <a
+                  className="timeline-link"
+                  href={exp.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View repository ↗
+                </a>
+              )}
+            </article>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+};
 
 export default WorkExperience;

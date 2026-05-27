@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import 'w3-css/w3.css';
 
 const Accordions = () => {
-  // Track open state per section by index
-  const [openSections, setOpenSections] = useState({});
+  const [openSections, setOpenSections] = useState({ 0: true });
 
   const toggleSection = (index) => {
     setOpenSections((prev) => ({
@@ -13,26 +11,50 @@ const Accordions = () => {
   };
 
   const sections = [
-    { title: 'How did I get inspired', content: 'I grew up playing video games. Starting with Wii, WiiU, and nitendo switch. Eventually I started playing roblox and minecraft. I became inspired to learn more about how these games are developed, rising my interest in computer science. When I took my first coding class in highschool called "Princples of Java", I loved the challenge of creating code, and realized that there are many different types of fields in computer science. After taking more advanced classes in computer science such as AP CSA, Advanced object oriented design, Advanced python, and a specific career acadcemy for cybersecurity networking, I was able to look into how people analyze and use data with code and how people secure networks which also striked my interest in potentially becoming a cybersecurity analyst or data scientist.' },
-    { title: 'My Background', content: 'I have experience in multitude of coding languages: Python, Java, HTML, CSS, JavaScript, React.js. I have CompTIA Network+ and CCST Networking certification. I am also Scrum Fundamentals certified. I have configured cisco switches from basic configurations to configuring the IP addresses and VLANs. I have developed coding projects: a Game Hub website with multiple games, this personal website, Rock, Paper, Scissors GUI in Python, Mutiple ML Projects as well! Feel free to look at my GitHub for more info ;)' },
-    { title: 'Education', content: 'I am an incoming freshman at the University of Maryland, College Park. I am majoring in Information Systems. I am planning on pursuing a 4+1 program within my major and get my masters in information systems as well!' },
+    {
+      title: 'How I got inspired',
+      content:
+        'I grew up playing video games Wii, Wii U, Nintendo Switch, then Roblox and Minecraft. That curiosity about how the games I loved were actually built pulled me toward computer science. My first coding class, "Principles of Java," made it real. I loved the challenge of getting code to work, and I went on to take more coding classes in high school that opened up software development and data analysis as paths. Over time, though, I realized I wanted more than just building. I wanted to shape what gets built and why. That\'s what drew me to product management, and ultimately to Information Systems and Management at the University of Maryland. The major is the bridge I was looking for: a path into big tech where I can stay close to the technical work while also socializing, leading, and pitching products to investors and stakeholders.',
+    },
+    {
+      title: 'My background',
+      content:
+        'I work across Python, Java, JavaScript, React, HTML, and CSS. I hold CompTIA Network+, Cisco CCST Networking, and Scrum Fundamentals certifications. I have configured Cisco switches end-to-end — from basic setup through IP addressing and VLANs. On the building side: a multi-game Game Hub, this portfolio, a Rock-Paper-Scissors GUI in Python, and several ML projects. More on my GitHub.',
+    },
+    {
+      title: 'Education',
+      content:
+        'Sophomore at the University of Maryland, College Park, graduating in 2028 with a Bachelor of Science in Information Systems and Management from the Robert H. Smith School of Business.',
+    },
   ];
 
   return (
-    <div>
-      {sections.map((section, index) => (
-        <div key={index}>
-          <button
-            onClick={() => toggleSection(index)}
-            className="w3-button w3-block w3-left-align w3-xlarge w3-padding-24"
+    <div className="accordion">
+      {sections.map((section, index) => {
+        const isOpen = !!openSections[index];
+        return (
+          <div
+            key={index}
+            className={`accordion-item ${isOpen ? 'is-open' : ''}`}
           >
-            <strong>{section.title}</strong>
-          </button>
-          <div className={`w3-container ${openSections[index] ? 'w3-show' : 'w3-hide'}`}>
-            <p className='accordion_text'><strong>{section.content}</strong></p>
+            <button
+              onClick={() => toggleSection(index)}
+              className="accordion-trigger"
+              aria-expanded={isOpen}
+            >
+              <span className="accordion-title">{section.title}</span>
+              <span className="accordion-icon" aria-hidden="true">
+                {isOpen ? '−' : '+'}
+              </span>
+            </button>
+            <div className="accordion-panel">
+              <div className="accordion-panel-inner">
+                <p>{section.content}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };
