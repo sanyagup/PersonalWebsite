@@ -3,7 +3,7 @@ import './workExperience.css';
 
 const experiences = [
   {
-    role: 'Software Engineer Intern · AI',
+    role: 'Project Management Intern · AI',
     org: 'inMorphis',
     date: 'May 2026 - Present',
     bullets: [
